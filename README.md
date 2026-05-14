@@ -11,8 +11,6 @@ I find the traditional notation to be much easier to read than bold face.
 
 ## The code
 
-This LaTeX code will work in Quarto:
-
 ```
 \renewcommand{\vector}[1]{\underline{#1}}
 \renewcommand{\matrix}[1]{\underset{\sim}{#1}}
