@@ -1,13 +1,13 @@
 ## Motivation
 
-It was once common for statistical instructors to use the following statistical notation:
+It was once common for statistical instructors to use the following notation:
 
 - **matrices**: squiggly underline
 - **vectors**: underline
 
-This notation has, sadly, fallen out of favor: 
+This notation has, sadly, fallen out of favor: most modern textbooks and online resources use bold face. 
 
-I find the traditional notation to be much easier to read than modern choices (such as bold face).
+I find the traditional notation to be much easier to read than bold face.
 
 ## The code
 
