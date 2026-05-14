@@ -58,7 +58,7 @@ format:
 
 Note that you must include `\let\matrix\relax` here.
 
-### Rendering LaTeX:
+### Rendering LaTeX
 
 Place the code in the premable:
 
