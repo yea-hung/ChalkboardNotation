@@ -14,7 +14,16 @@ I find the traditional notation to be much easier to read than bold face.
 ```
 \renewcommand{\vector}[1]{\underline{#1}}
 \renewcommand{\matrix}[1]{\underset{\sim}{#1}}
+\newcommand{\ev}{\mathrm{E}}
+\newcommand{\var}{\mathrm{Var}}
 ```
+
+This will define the following commands:
+
+- `\vector`: for vectors
+- `\matrix`: for matrices
+- `\ev`: for expected values
+- `\var`: for variance
 
 ## Implementation 
 
@@ -26,6 +35,8 @@ To implement this in Quarto when rendering to HTML, place the code within `$$` n
 $$
 \renewcommand{\vector}[1]{\underline{#1}}
 \renewcommand{\matrix}[1]{\underset{\sim}{#1}}
+\newcommand{\ev}{\mathrm{E}}
+\newcommand{\var}{\mathrm{Var}}
 $$
 ```
 
@@ -41,6 +52,8 @@ format:
         \let\matrix\relax
         \renewcommand{\vector}[1]{\underline{#1}}
         \newcommand{\matrix}[1]{\underset{\sim}{#1}}
+        \newcommand{\ev}{\mathrm{E}}
+        \newcommand{\var}{\mathrm{Var}}
 ```
 
 Note that you must include `\let\matrix\relax` here.
@@ -53,6 +66,8 @@ Place the code in the premable:
 \let\matrix\relax
 \renewcommand{\vector}[1]{\underline{#1}}
 \newcommand{\matrix}[1]{\underset{\sim}{#1}}
+\newcommand{\ev}{\mathrm{E}}
+\newcommand{\var}{\mathrm{Var}}
 ```
 
 Note that you must include `\let\matrix\relax` here.
