@@ -2,8 +2,8 @@
 
 It was once common for statistical instructors to use the following notation:
 
-- **matrices**: squiggly underline
 - **vectors**: underline
+- **matrices**: squiggly underline
 
 This notation has, sadly, fallen out of favor: most modern textbooks and online resources use bold face. 
 
