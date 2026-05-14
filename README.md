@@ -18,7 +18,9 @@ This LaTeX code will work in Quarto:
 \renewcommand{\matrix}[1]{\underset{\sim}{#1}}
 ```
 
-## Implementation for rendering Quarto to HTML
+## Implementation 
+
+### Rendering Quarto to HTML
 
 To implement this in Quarto when rendering to HTML, place the above within `$$` near the top of your Quarto document, like this:
 
@@ -29,7 +31,7 @@ $$
 $$
 ```
 
-## Implementation for rendering Quarto to PDF
+### Rendering Quarto to PDF
 
 To implement this in Quarto when rendering to PDF, place the above within `include-in-header` in the YAML, like this:
 
