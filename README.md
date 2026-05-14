@@ -20,7 +20,7 @@ I find the traditional notation to be much easier to read than bold face.
 
 ### Rendering Quarto to HTML
 
-To implement this in Quarto when rendering to HTML, place the above within `$$` near the top of your Quarto document, like this:
+To implement this in Quarto when rendering to HTML, place the code within `$$` near the top of your Quarto document, like this:
 
 ```
 $$
@@ -31,7 +31,7 @@ $$
 
 ### Rendering Quarto to PDF
 
-To implement this in Quarto when rendering to PDF, place the above within `include-in-header` in the YAML, like this:
+To implement this in Quarto when rendering to PDF, place the code within `include-in-header` in the YAML, like this:
 
 ```
 format:
@@ -43,3 +43,16 @@ format:
         \newcommand{\matrix}[1]{\underset{\sim}{#1}}
 ```
 
+Note that you must include `\let\matrix\relax` here.
+
+### Rendering LaTeX:
+
+Place the code in the premable:
+
+```
+\let\matrix\relax
+\renewcommand{\vector}[1]{\underline{#1}}
+\newcommand{\matrix}[1]{\underset{\sim}{#1}}
+```
+
+Note that you must include `\let\matrix\relax` here.
