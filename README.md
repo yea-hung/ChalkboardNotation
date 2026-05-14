@@ -22,7 +22,7 @@ This will define the following commands:
 
 - `\vector`: for vectors
 - `\matrix`: for matrices
-- `\ev`: for expected values
+- `\ev`: for expected value
 - `\var`: for variance
 
 ## Implementation 
