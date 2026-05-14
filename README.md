@@ -31,7 +31,7 @@ $$
 
 ### Rendering Quarto to PDF
 
-To implement this in Quarto when rendering to PDF, place the code within `include-in-header` in the YAML, like this:
+To implement this in Quarto when rendering to PDF, place the code after `include-in-header` in the YAML, like this:
 
 ```
 format:
